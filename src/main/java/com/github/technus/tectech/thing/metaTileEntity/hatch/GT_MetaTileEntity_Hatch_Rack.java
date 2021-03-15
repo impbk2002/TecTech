@@ -315,6 +315,17 @@ public class GT_MetaTileEntity_Hatch_Rack extends GT_MetaTileEntity_Hatch {
         new RackComponent("IC2:ic2.reactorVentGold", 0, -1, 40f, 5000, false);
         new RackComponent("IC2:ic2.reactorVentDiamond", 0, -1, 80f, 10000, false);//2x oc
         
+        if(Loader.isModLoaded("kekztech")) {
+            new RackComponent("kekztech:item.kekztech_reactor_item.0", 0, -1, 25f, 1000, false);
+            new RackComponent("kekztech:item.kekztech_reactor_item.1", 0, -1, 50f, 2500, false);
+            new RackComponent("kekztech:item.kekztech_reactor_item.2", 0, -1, 75f, 5000, false);
+            new RackComponent("kekztech:item.kekztech_reactor_item.3", 0, -1, 100f, 10000, false);//2x oc
+            new RackComponent("kekztech:item.kekztech_reactor_item.8", 0, -1, 50f, 1000, false);
+            new RackComponent("kekztech:item.kekztech_reactor_item.9", 0, -1, 100f, 2500, false);
+            new RackComponent("kekztech:item.kekztech_reactor_item.10", 0, -1, 150f, 5000, false);
+            new RackComponent("kekztech:item.kekztech_reactor_item.11", 0, -1, 200f, 10000, false);
+        }
+        
         if (Loader.isModLoaded(Reference.DREAMCRAFT)) {
             //GTNH-GT5u circuits
             //these components causes crashes when used with the original GT5u
@@ -364,6 +375,10 @@ public class GT_MetaTileEntity_Hatch_Rack extends GT_MetaTileEntity_Hatch {
             new RackComponent("OpenComputers:item.oc.APU0", 350, 234, -.1f, 1500, true);//apu t2
             new RackComponent("OpenComputers:item.oc.APU1", 606, 398, -.2f, 4500, true);//apu t3
             new RackComponent("OpenComputers:item.oc.APU2", 1590, 1006, -.3f, 9000, true);//apu tC
+        }
+        
+        if(Loader.isModLoaded("appliedenergistics2")){
+        	new RackComponent("appliedenergistics2:item.appliedenergistics2.ItemCreativeStorageCell", 0, -1, 5000f, 10000, false);
         }
     }
 
